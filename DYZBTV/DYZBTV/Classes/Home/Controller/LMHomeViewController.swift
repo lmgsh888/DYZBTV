@@ -8,8 +8,19 @@
 
 import UIKit
 
-class LMHomeViewController: UIViewController {
 
+private let kPageTitleViewH : CGFloat = 40
+
+class LMHomeViewController: UIViewController {
+    //MARK: - 懒加载
+    fileprivate lazy var pageTitleView : PageTitleView = {
+        
+        let pageViewFrame = CGRect(x: 0, y:kStatusBar + kNavigatorBar , width: KScreenW, height: kPageTitleViewH)
+        let titles = ["推荐", "游戏", "娱乐", "趣玩"]
+        let pageTilteView = PageTitleView(frame: pageViewFrame, titles: titles)
+            return pageTilteView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +28,9 @@ class LMHomeViewController: UIViewController {
         //设置的导航栏
         setNavigatorBar()
         // Do any additional setup after loading the view.
+        
+        //设置UI
+        setUpUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +40,8 @@ class LMHomeViewController: UIViewController {
 
 }
 
+//option + command + 左键 === 折叠代码块
+//MARK: - 设置导航栏
 extension LMHomeViewController{
     fileprivate func setNavigatorBar(){
         //1.左边
@@ -45,7 +61,7 @@ extension LMHomeViewController{
     }
 }
 
-//导航栏菜单栏项的事件
+//MARK: - 导航栏菜单栏项的事件
 extension LMHomeViewController{
     
     //logo点击事件
@@ -70,5 +86,18 @@ extension LMHomeViewController{
     
     
 }
+
+//MARK: - 设置UI
+extension LMHomeViewController{
+    fileprivate func setUpUI(){
+        //不设置UIScrollView的内边距
+        automaticallyAdjustsScrollViewInsets = false
+        
+        //添加pageTitleView
+        view.addSubview(pageTitleView)
+    }
+}
+
+
 
 
