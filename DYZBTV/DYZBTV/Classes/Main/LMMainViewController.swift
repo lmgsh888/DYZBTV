@@ -8,16 +8,36 @@
 
 import UIKit
 
-class LMMainViewController: UIViewController {
+class LMMainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //主页
+        addChildVcWithStoryBoard(name: "Home")
+        //直播
+        addChildVcWithStoryBoard(name: "Live")
+        //关注
+        addChildVcWithStoryBoard(name: "Follow")
+        //我的
+        addChildVcWithStoryBoard(name: "Profile")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+//加载storyBoard控制器
+extension LMMainViewController{
+    
+    
+    fileprivate func addChildVcWithStoryBoard(name : String){
+        //1.加载storyBoard中的子控制器
+        let childVc = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController()!;
+        
+        //2.将控制器加载到TabBarController
+        addChildViewController(childVc);
+        
     }
 }
+
+
+
