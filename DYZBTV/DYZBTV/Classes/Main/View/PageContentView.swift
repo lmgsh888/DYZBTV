@@ -14,21 +14,22 @@ class PageContentView: UIView {
 
     //MARK: - 定义属性
     fileprivate var childVcs : [UIViewController]
-    fileprivate var parentViewController : UIViewController?
+    //使用weak防止强引用
+    fileprivate weak var parentViewController : UIViewController?
     
     //MARK: - 懒加载
-    fileprivate lazy var collectionView : UICollectionView  = {
+    fileprivate lazy var collectionView : UICollectionView  = {[weak self] in
         
         //1.创建流水布局
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize =  self.bounds.size
+        flowLayout.itemSize =  (self?.bounds.size)!
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
         flowLayout.scrollDirection = .horizontal
         
       
         //2.创建collectionView
-        let collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: flowLayout)
+        let collectionView = UICollectionView(frame: (self?.bounds)!, collectionViewLayout: flowLayout)
         //2.1 设置属性
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.bounces = false

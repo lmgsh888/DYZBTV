@@ -21,7 +21,7 @@ class LMHomeViewController: UIViewController {
             return pageTilteView
     }()
     
-    fileprivate lazy var pageContentView : PageContentView = {
+    fileprivate lazy var pageContentView : PageContentView = { [weak self] in
         let contentY = kStatusBar + kNavigatorBar + kPageTitleViewH
         let contentH = kScreenH - contentY - kTabBarH
         let contentFrame = CGRect(x:0, y:contentY, width:KScreenW, height: contentH)
