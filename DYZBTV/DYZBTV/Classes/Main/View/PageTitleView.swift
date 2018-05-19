@@ -9,7 +9,10 @@
 import UIKit
 
 //MARK: - 定义常量
+//滑块的高度
 private let kScrollViewLineH : CGFloat = 2
+//底线的高度
+private let kBottomLineH : CGFloat = 0.5
 class PageTitleView: UIView {
 
     //MARK: - 定义属性
@@ -18,12 +21,20 @@ class PageTitleView: UIView {
     
     //MARK: - 懒加载
     fileprivate lazy var titleLabels : [UILabel] = [UILabel]()
+    //title中的scroView
     fileprivate lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsVerticalScrollIndicator = false
         scrollView.isPagingEnabled = true
         scrollView.bounces = false
         return scrollView
+    }()
+    
+    //滑块
+    fileprivate lazy var scrollLine : UIView = {
+       let scrollLine = UIView()
+        scrollLine.backgroundColor = UIColor.orange
+        return scrollLine
     }()
     
     //MARK: - 初始化
@@ -47,15 +58,19 @@ extension PageTitleView {
     
     //设置UI
     fileprivate func setUpUI(){
-        //给添加UIScrollow
+        //1.给添加UIScrollow
         addSubview(scrollView)
         scrollView.frame = bounds
-        //设置标题对应的label
+        
+        //2.设置标题对应的label
         setTitleLabel()
+        
+        //3.设置底线和滑块
+        setBottomLineAndScrollLine()
     }
     
     //设置Title对应的lable
-    private func setTitleLabel(){
+    fileprivate func setTitleLabel(){
         
         let labelY : CGFloat = 0;
         let labelW : CGFloat = frame.width / CGFloat (titles.count)
@@ -88,8 +103,31 @@ extension PageTitleView {
             label.addGestureRecognizer(tapGes)
         }
     }
+    
+    //添加底部线条和滑块
+    fileprivate func setBottomLineAndScrollLine(){
+        
+        //1.设置底线
+        let lineView = UIView()
+        lineView.frame = CGRect(x: 0, y:self.bounds.height - kBottomLineH , width: self.bounds.width, height: kBottomLineH)
+        lineView.backgroundColor = UIColor.lightGray
+        addSubview(lineView)
+        
+        //2.添加滑块
+        //获取第一个label
+        guard let firstLabel = titleLabels.first else { return }
+        addSubview(scrollLine)
+        
+        let lineX = firstLabel.frame.origin.x
+        let lineY = bounds.height - kScrollViewLineH
+        let lineW = firstLabel.frame.width
+        let lineH = kScrollViewLineH
+        scrollLine.frame = CGRect(x: lineX, y: lineY, width: lineW, height: lineH)
+        firstLabel.textColor = UIColor.orange
+    }
 }
 
+//MARK: - 事件
 extension PageTitleView{
     @objc fileprivate func titleLabelClick(_ tapGes : UITapGestureRecognizer){
         print("titleLabelClick")

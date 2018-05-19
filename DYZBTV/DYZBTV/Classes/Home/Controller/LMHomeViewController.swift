@@ -21,14 +21,27 @@ class LMHomeViewController: UIViewController {
             return pageTilteView
     }()
     
+    fileprivate lazy var pageContentView : PageContentView = {
+        let contentY = kStatusBar + kNavigatorBar + kPageTitleViewH
+        let contentH = kScreenH - contentY - kTabBarH
+        let contentFrame = CGRect(x:0, y:contentY, width:KScreenW, height: contentH)
+      
+        var childVcs = [UIViewController]()
+        childVcs.append(RecommendViewController())
+        childVcs.append(GameViewController())
+        childVcs.append(AmuseViewController())
+        childVcs.append(FunnyViewController())
+        let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        return contentView
+        
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.blue
+        //self.view.backgroundColor = UIColor.blue
         //设置的导航栏
         setNavigatorBar()
-        // Do any additional setup after loading the view.
-        
         //设置UI
         setUpUI()
     }
@@ -95,6 +108,9 @@ extension LMHomeViewController{
         
         //添加pageTitleView
         view.addSubview(pageTitleView)
+        
+        //添加pageContentView
+        view.addSubview(pageContentView)
     }
 }
 

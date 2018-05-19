@@ -25,6 +25,11 @@
 		0435032E20A8178A00630D03 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435032D20A8178A00630D03 /* UIBarButtonItem-Extension.swift */; };
 		0435033020A86E9F00630D03 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435032F20A86E9F00630D03 /* PageTitleView.swift */; };
 		0435033220A875C000630D03 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435033120A875C000630D03 /* Common.swift */; };
+		0490AEB720B02E02004C3354 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490AEB620B02E02004C3354 /* PageContentView.swift */; };
+		0490AEB920B047C9004C3354 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490AEB820B047C9004C3354 /* RecommendViewController.swift */; };
+		0490AEBB20B047E0004C3354 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490AEBA20B047E0004C3354 /* GameViewController.swift */; };
+		0490AEBD20B047F0004C3354 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490AEBC20B047F0004C3354 /* AmuseViewController.swift */; };
+		0490AEBF20B04802004C3354 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490AEBE20B04802004C3354 /* FunnyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		0435032D20A8178A00630D03 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		0435032F20A86E9F00630D03 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		0435033120A875C000630D03 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		0490AEB620B02E02004C3354 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		0490AEB820B047C9004C3354 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		0490AEBA20B047E0004C3354 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		0490AEBC20B047F0004C3354 /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		0490AEBE20B04802004C3354 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +240,10 @@
 			isa = PBXGroup;
 			children = (
 				042703C420A1E6F200A62387 /* Home.storyboard */,
+				0490AEB820B047C9004C3354 /* RecommendViewController.swift */,
+				0490AEBA20B047E0004C3354 /* GameViewController.swift */,
+				0490AEBC20B047F0004C3354 /* AmuseViewController.swift */,
+				0490AEBE20B04802004C3354 /* FunnyViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +327,7 @@
 			children = (
 				042703C220A1E5D800A62387 /* Main.storyboard */,
 				0435032F20A86E9F00630D03 /* PageTitleView.swift */,
+				0490AEB620B02E02004C3354 /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,12 +538,17 @@
 				0435033020A86E9F00630D03 /* PageTitleView.swift in Sources */,
 				042703C020A1DFD400A62387 /* LMMainViewController.swift in Sources */,
 				042703C120A1DFD400A62387 /* LMProfileViewController.swift in Sources */,
+				0490AEBF20B04802004C3354 /* FunnyViewController.swift in Sources */,
+				0490AEB720B02E02004C3354 /* PageContentView.swift in Sources */,
+				0490AEBB20B047E0004C3354 /* GameViewController.swift in Sources */,
 				042703BD20A1DFD400A62387 /* LMFollowViewController.swift in Sources */,
 				0435033220A875C000630D03 /* Common.swift in Sources */,
 				042703BF20A1DFD400A62387 /* LMLiveViewController.swift in Sources */,
+				0490AEBD20B047F0004C3354 /* AmuseViewController.swift in Sources */,
 				0427036F20A1DF7100A62387 /* AppDelegate.swift in Sources */,
 				042703BE20A1DFD400A62387 /* LMHomeViewController.swift in Sources */,
 				0435032E20A8178A00630D03 /* UIBarButtonItem-Extension.swift in Sources */,
+				0490AEB920B047C9004C3354 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
