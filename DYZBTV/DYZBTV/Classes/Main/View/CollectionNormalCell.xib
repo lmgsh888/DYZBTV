@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="DYZBTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="253" height="182"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="OX1-0X-OqS">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="157"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDH-OK-06y" userLabel="底部view">
+                        <rect key="frame" x="0.0" y="157" width="253" height="25"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="cNC-Cq-Hho">
+                                <rect key="frame" x="5" y="6" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="irg-vT-O6d"/>
+                                    <constraint firstAttribute="height" constant="14" id="ujH-zl-sHv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房间名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIW-Hm-dT1">
+                                <rect key="frame" x="24" y="5" width="219" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="2Or-Gn-XM1"/>
+                            <constraint firstAttribute="bottom" secondItem="cNC-Cq-Hho" secondAttribute="bottom" constant="5" id="3dQ-PV-fBE"/>
+                            <constraint firstItem="cNC-Cq-Hho" firstAttribute="leading" secondItem="ZDH-OK-06y" secondAttribute="leading" constant="5" id="B4o-h0-IfV"/>
+                            <constraint firstAttribute="bottom" secondItem="cNC-Cq-Hho" secondAttribute="bottom" constant="5" id="IkN-9C-l39"/>
+                            <constraint firstItem="xIW-Hm-dT1" firstAttribute="leading" secondItem="cNC-Cq-Hho" secondAttribute="trailing" constant="5" id="L4g-kf-ykS"/>
+                            <constraint firstAttribute="trailing" secondItem="xIW-Hm-dT1" secondAttribute="trailing" constant="10" id="f50-Sw-LGr"/>
+                            <constraint firstItem="cNC-Cq-Hho" firstAttribute="leading" secondItem="ZDH-OK-06y" secondAttribute="leading" constant="5" id="kSS-le-sX5"/>
+                            <constraint firstAttribute="bottom" secondItem="xIW-Hm-dT1" secondAttribute="bottom" constant="5" id="zqh-U6-CiE"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2S-ds-Fkk">
+                        <rect key="frame" x="5" y="138" width="50" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="FDA-gg-Jv0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVm-wX-Gwb" userLabel="btn_online">
+                        <rect key="frame" x="183" y="136" width="60" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666在线" image="Image_online">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZDH-OK-06y" firstAttribute="top" secondItem="j2S-ds-Fkk" secondAttribute="bottom" constant="5" id="1wM-8k-kjH"/>
+                <constraint firstItem="OX1-0X-OqS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Jy-qi-BQX"/>
+                <constraint firstItem="ZDH-OK-06y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gbj-Kw-K8T"/>
+                <constraint firstItem="OX1-0X-OqS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="H4F-AJ-FKC"/>
+                <constraint firstAttribute="bottom" secondItem="ZDH-OK-06y" secondAttribute="bottom" id="Q0A-pu-yAn"/>
+                <constraint firstItem="j2S-ds-Fkk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="QiQ-Am-x6B"/>
+                <constraint firstItem="ZDH-OK-06y" firstAttribute="top" secondItem="OX1-0X-OqS" secondAttribute="bottom" id="Y9z-vw-bfU"/>
+                <constraint firstAttribute="trailing" secondItem="ZDH-OK-06y" secondAttribute="trailing" id="aVA-AX-sF9"/>
+                <constraint firstItem="ZDH-OK-06y" firstAttribute="top" secondItem="qVm-wX-Gwb" secondAttribute="bottom" constant="5" id="jvr-uO-hhy"/>
+                <constraint firstAttribute="trailing" secondItem="qVm-wX-Gwb" secondAttribute="trailing" constant="10" id="mjO-r5-gsb"/>
+                <constraint firstAttribute="trailing" secondItem="OX1-0X-OqS" secondAttribute="trailing" id="rGB-Hg-hDb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <point key="canvasLocation" x="31.5" y="94"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+    </resources>
+</document>

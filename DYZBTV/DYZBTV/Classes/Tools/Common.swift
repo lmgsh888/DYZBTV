@@ -18,3 +18,6 @@ let kTabBarH : CGFloat = 44
 let KScreenW : CGFloat = UIScreen.main.bounds.width
 //屏幕高度
 let kScreenH : CGFloat = UIScreen.main.bounds.height
+
+//每个item间的间距
+let kItemMargin : CGFloat = 10

@@ -13,11 +13,13 @@ private let kPageTitleViewH : CGFloat = 40
 
 class LMHomeViewController: UIViewController {
     //MARK: - 懒加载
-    fileprivate lazy var pageTitleView : PageTitleView = {
+    fileprivate lazy var pageTitleView : PageTitleView = {[weak self] in
         
         let pageViewFrame = CGRect(x: 0, y:kStatusBar + kNavigatorBar , width: KScreenW, height: kPageTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let pageTilteView = PageTitleView(frame: pageViewFrame, titles: titles)
+        //成为代理
+        pageTilteView.delegate = self
             return pageTilteView
     }()
     
@@ -32,6 +34,7 @@ class LMHomeViewController: UIViewController {
         childVcs.append(AmuseViewController())
         childVcs.append(FunnyViewController())
         let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        contentView.delegate = self
         return contentView
         
     }()
@@ -113,6 +116,32 @@ extension LMHomeViewController{
         view.addSubview(pageContentView)
     }
 }
+
+//MARK: - 实现代理 PageTitleViewDelegate
+extension LMHomeViewController : PageTitleViewDelegate{
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex: Int) {
+//        print("--pageTitleView--%@  , index:%@",titleView,selectedIndex)
+        //设置当前pageTitleView对应的pageContent
+        pageContentView.setContentIndex(selectedIndex)
+    }
+}
+
+extension LMHomeViewController : PageContentViewDelegate{
+    func pageContentView(_ pageContentView: PageContentView, progress: CGFloat, soureIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: soureIndex, targetIndex: targetIndex)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
