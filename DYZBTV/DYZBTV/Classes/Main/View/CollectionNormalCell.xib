@@ -60,7 +60,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVm-wX-Gwb" userLabel="btn_online">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVm-wX-Gwb" userLabel="btn_online">
                         <rect key="frame" x="183" y="136" width="60" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="666在线" image="Image_online">
@@ -83,6 +83,12 @@
                 <constraint firstAttribute="trailing" secondItem="OX1-0X-OqS" secondAttribute="trailing" id="rGB-Hg-hDb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="iconImageView" destination="OX1-0X-OqS" id="tAv-fz-Ifd"/>
+                <outlet property="nickNameLabel" destination="j2S-ds-Fkk" id="nB7-u8-HLv"/>
+                <outlet property="onlineBtn" destination="qVm-wX-Gwb" id="Ta8-zG-y4Q"/>
+                <outlet property="roomNameLabel" destination="xIW-Hm-dT1" id="ecZ-HP-x9m"/>
+            </connections>
             <point key="canvasLocation" x="31.5" y="94"/>
         </collectionViewCell>
     </objects>

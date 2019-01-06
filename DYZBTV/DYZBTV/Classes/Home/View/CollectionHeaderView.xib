@@ -25,7 +25,7 @@
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nw9-3u-NZl">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
-                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="10" id="m43-JF-aM2"/>
                     </constraints>
@@ -60,6 +60,11 @@
                 <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="HIO-NL-dGp" secondAttribute="trailing" constant="10" id="qse-e6-vEW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="iconImageView" destination="scH-14-slr" id="Beo-Ph-Ahb"/>
+                <outlet property="moreBtn" destination="HIO-NL-dGp" id="yZq-i8-CCu"/>
+                <outlet property="tagNameLabel" destination="9cV-7t-cmS" id="fxw-qe-LOp"/>
+            </connections>
             <point key="canvasLocation" x="-271" y="-44"/>
         </collectionReusableView>
     </objects>

@@ -47,6 +47,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T8-kq-giY">
+                        <rect key="frame" x="157" y="5" width="60" height="26"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="LoA-wn-Lw8"/>
+                            <constraint firstAttribute="height" constant="26" id="Xpa-Wc-OLL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
                 </subviews>
             </view>
             <constraints>
@@ -58,12 +70,20 @@
                 <constraint firstAttribute="bottom" secondItem="Kxb-Td-IXS" secondAttribute="bottom" constant="10" id="GIo-Eh-umW"/>
                 <constraint firstItem="vfS-5L-tWP" firstAttribute="leading" secondItem="Kxb-Td-IXS" secondAttribute="trailing" constant="5" id="Kgm-e0-elU"/>
                 <constraint firstItem="JHr-2r-5cn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RHq-hn-Lda"/>
+                <constraint firstAttribute="trailing" secondItem="2T8-kq-giY" secondAttribute="trailing" constant="5" id="Yk2-iz-DAm"/>
+                <constraint firstItem="2T8-kq-giY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="boM-M3-rS6"/>
                 <constraint firstItem="Kxb-Td-IXS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="isK-GN-a8R"/>
                 <constraint firstItem="JHr-2r-5cn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kG7-OC-xkF"/>
                 <constraint firstAttribute="trailing" secondItem="JHr-2r-5cn" secondAttribute="trailing" id="tnL-29-uGv"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="222" height="242"/>
+            <connections>
+                <outlet property="cityName" destination="vfS-5L-tWP" id="A8Q-Wj-f3c"/>
+                <outlet property="iconImageView" destination="JHr-2r-5cn" id="C1I-dK-RU4"/>
+                <outlet property="nickNameLabel" destination="Q7F-B2-tXp" id="aMp-gT-tQ1"/>
+                <outlet property="onlineBtn" destination="2T8-kq-giY" id="AZ9-vx-I6G"/>
+            </connections>
             <point key="canvasLocation" x="11" y="51"/>
         </collectionViewCell>
     </objects>

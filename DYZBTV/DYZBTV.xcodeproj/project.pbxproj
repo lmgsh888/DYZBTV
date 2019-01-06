@@ -33,10 +33,17 @@
 		0490AEBF20B04802004C3354 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490AEBE20B04802004C3354 /* FunnyViewController.swift */; };
 		04C9B41421C62D4100EA01BE /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B41321C62D4100EA01BE /* RecommendCycleView.swift */; };
 		04C9B41621C62D5300EA01BE /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C9B41521C62D5300EA01BE /* RecommendCycleView.xib */; };
+		04CB91EE21CFC08D00E2716D /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB91ED21CFC08D00E2716D /* RecommendViewModel.swift */; };
+		04CE627421D51DED00280D3A /* CollectionViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE627321D51DED00280D3A /* CollectionViewBaseCell.swift */; };
 		04D3CCBB21C7D14900675DA2 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3CCB921C7D14900675DA2 /* CollectionNormalCell.swift */; };
 		04D3CCBC21C7D14900675DA2 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D3CCBA21C7D14900675DA2 /* CollectionNormalCell.xib */; };
 		04D3CCBF21C7D15E00675DA2 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3CCBD21C7D15E00675DA2 /* CollectionPrettyCell.swift */; };
 		04D3CCC021C7D15E00675DA2 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D3CCBE21C7D15E00675DA2 /* CollectionPrettyCell.xib */; };
+		04DAF43721D1170F001CCBA2 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF43621D1170F001CCBA2 /* NetWorkTool.swift */; };
+		04DAF43921D11BD6001CCBA2 /* NSDate-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF43821D11BD6001CCBA2 /* NSDate-extension.swift */; };
+		04DAF43B21D11DE4001CCBA2 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF43A21D11DE4001CCBA2 /* AnchorModel.swift */; };
+		04DAF43D21D1201C001CCBA2 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF43C21D1201C001CCBA2 /* AnchorGroup.swift */; };
+		04DAF43F21D12046001CCBA2 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF43E21D12046001CCBA2 /* BaseGameModel.swift */; };
 		04DCCB2121C688DF00300283 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCCB1F21C688DF00300283 /* CollectionHeaderView.swift */; };
 		04DCCB2221C688DF00300283 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DCCB2021C688DF00300283 /* CollectionHeaderView.xib */; };
 		55E1AD58D2273EED33F95307 /* Pods_DYZBTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C991188F29FC60324429CECC /* Pods_DYZBTVTests.framework */; };
@@ -94,10 +101,17 @@
 		0490AEBE20B04802004C3354 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		04C9B41321C62D4100EA01BE /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		04C9B41521C62D5300EA01BE /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
+		04CB91ED21CFC08D00E2716D /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		04CE627321D51DED00280D3A /* CollectionViewBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewBaseCell.swift; sourceTree = "<group>"; };
 		04D3CCB921C7D14900675DA2 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
 		04D3CCBA21C7D14900675DA2 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		04D3CCBD21C7D15E00675DA2 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		04D3CCBE21C7D15E00675DA2 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		04DAF43621D1170F001CCBA2 /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		04DAF43821D11BD6001CCBA2 /* NSDate-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-extension.swift"; sourceTree = "<group>"; };
+		04DAF43A21D11DE4001CCBA2 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		04DAF43C21D1201C001CCBA2 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		04DAF43E21D12046001CCBA2 /* BaseGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		04DCCB1F21C688DF00300283 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		04DCCB2021C688DF00300283 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		077C71BAF427E0A0EAADFBC5 /* Pods-DYZBTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZBTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYZBTVTests/Pods-DYZBTVTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -290,6 +304,7 @@
 		042703A820A1DFD400A62387 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				04CB91ED21CFC08D00E2716D /* RecommendViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -357,6 +372,9 @@
 		042703B220A1DFD400A62387 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04DAF43A21D11DE4001CCBA2 /* AnchorModel.swift */,
+				04DAF43C21D1201C001CCBA2 /* AnchorGroup.swift */,
+				04DAF43E21D12046001CCBA2 /* BaseGameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -371,6 +389,7 @@
 				04D3CCBA21C7D14900675DA2 /* CollectionNormalCell.xib */,
 				04D3CCBD21C7D15E00675DA2 /* CollectionPrettyCell.swift */,
 				04D3CCBE21C7D15E00675DA2 /* CollectionPrettyCell.xib */,
+				04CE627321D51DED00280D3A /* CollectionViewBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -428,6 +447,7 @@
 			children = (
 				042703BC20A1DFD400A62387 /* Extension */,
 				0435033120A875C000630D03 /* Common.swift */,
+				04DAF43621D1170F001CCBA2 /* NetWorkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -437,6 +457,7 @@
 			children = (
 				0435032D20A8178A00630D03 /* UIBarButtonItem-Extension.swift */,
 				048799DB21C3F25D006B403B /* UIColor-Extension.swift */,
+				04DAF43821D11BD6001CCBA2 /* NSDate-extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -476,7 +497,6 @@
 				0427036820A1DF7100A62387 /* Frameworks */,
 				0427036920A1DF7100A62387 /* Resources */,
 				5D724F3E56A33158A656101D /* [CP] Embed Pods Frameworks */,
-				86FF5477D1112A0169CF1117 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -495,8 +515,6 @@
 				0427037B20A1DF7200A62387 /* Sources */,
 				0427037C20A1DF7200A62387 /* Frameworks */,
 				0427037D20A1DF7200A62387 /* Resources */,
-				22920BFE80A5A19F37458AF1 /* [CP] Embed Pods Frameworks */,
-				FC34453AA384F4D236D32805 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -516,8 +534,6 @@
 				0427038620A1DF7200A62387 /* Sources */,
 				0427038720A1DF7200A62387 /* Frameworks */,
 				0427038820A1DF7200A62387 /* Resources */,
-				03E8C658AA65686D388A477F /* [CP] Embed Pods Frameworks */,
-				2F85C87331D8216350E67066 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -611,49 +627,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03E8C658AA65686D388A477F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZBTVUITests/Pods-DYZBTVUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0F0437F1D475D6C7CC9C677F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYZBTVTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		22920BFE80A5A19F37458AF1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZBTVTests/Pods-DYZBTVTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		229391FAF1F9581CDAD0DDB5 /* [CP] Check Pods Manifest.lock */ = {
@@ -662,28 +651,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYZBTVUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2F85C87331D8216350E67066 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZBTVUITests/Pods-DYZBTVUITests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		35F832ED5866FB7B0CCF3F15 /* [CP] Check Pods Manifest.lock */ = {
@@ -692,13 +669,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYZBTV-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5D724F3E56A33158A656101D /* [CP] Embed Pods Frameworks */ = {
@@ -707,43 +687,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DYZBTV/Pods-DYZBTV-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZBTV/Pods-DYZBTV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		86FF5477D1112A0169CF1117 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZBTV/Pods-DYZBTV-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC34453AA384F4D236D32805 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZBTVTests/Pods-DYZBTVTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -753,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DAF43921D11BD6001CCBA2 /* NSDate-extension.swift in Sources */,
 				0435033020A86E9F00630D03 /* PageTitleView.swift in Sources */,
 				04D3CCBF21C7D15E00675DA2 /* CollectionPrettyCell.swift in Sources */,
 				048799DC21C3F25D006B403B /* UIColor-Extension.swift in Sources */,
@@ -761,15 +717,21 @@
 				0490AEBF20B04802004C3354 /* FunnyViewController.swift in Sources */,
 				0490AEB720B02E02004C3354 /* PageContentView.swift in Sources */,
 				0490AEBB20B047E0004C3354 /* GameViewController.swift in Sources */,
+				04DAF43F21D12046001CCBA2 /* BaseGameModel.swift in Sources */,
 				042703BD20A1DFD400A62387 /* LMFollowViewController.swift in Sources */,
 				04DCCB2121C688DF00300283 /* CollectionHeaderView.swift in Sources */,
 				04C9B41421C62D4100EA01BE /* RecommendCycleView.swift in Sources */,
+				04DAF43D21D1201C001CCBA2 /* AnchorGroup.swift in Sources */,
 				0435033220A875C000630D03 /* Common.swift in Sources */,
 				042703BF20A1DFD400A62387 /* LMLiveViewController.swift in Sources */,
+				04CB91EE21CFC08D00E2716D /* RecommendViewModel.swift in Sources */,
+				04CE627421D51DED00280D3A /* CollectionViewBaseCell.swift in Sources */,
 				0490AEBD20B047F0004C3354 /* AmuseViewController.swift in Sources */,
 				0427036F20A1DF7100A62387 /* AppDelegate.swift in Sources */,
 				042703BE20A1DFD400A62387 /* LMHomeViewController.swift in Sources */,
 				0435032E20A8178A00630D03 /* UIBarButtonItem-Extension.swift in Sources */,
+				04DAF43B21D11DE4001CCBA2 /* AnchorModel.swift in Sources */,
+				04DAF43721D1170F001CCBA2 /* NetWorkTool.swift in Sources */,
 				04D3CCBB21C7D14900675DA2 /* CollectionNormalCell.swift in Sources */,
 				0490AEB920B047C9004C3354 /* RecommendViewController.swift in Sources */,
 			);
