@@ -12,6 +12,7 @@ class CollectionPrettyCell: CollectionViewBaseCell {
 
 @IBOutlet weak var cityName: UILabel!
     
+    //MARK: - 模型
    override var anchor : AnchorModel? {
         didSet{
             //给父类传递模型

@@ -13,6 +13,13 @@ class CollectionViewBaseCell: UICollectionViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var nickNameLabel: UILabel!
     @IBOutlet weak var onlineBtn: UIButton!
+    
+    override func awakeFromNib() {
+        onlineBtn.layer.cornerRadius = 5;
+        onlineBtn.layer.masksToBounds = true
+        
+    }
+    
     var anchor : AnchorModel? {
         didSet{
             //校验数据

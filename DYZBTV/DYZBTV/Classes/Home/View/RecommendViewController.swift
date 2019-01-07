@@ -60,7 +60,6 @@ class RecommendViewController: UIViewController {
     fileprivate lazy var recommendCycleView : RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
         cycleView.frame = CGRect(x: 0, y: -kcycleViewH, width: KScreenW, height: kcycleViewH)
-        cycleView.backgroundColor = UIColor.red
         return cycleView
     }()
     
@@ -80,6 +79,11 @@ class RecommendViewController: UIViewController {
             self.collectionView.reloadData()
         }
         
+        //请求轮播数据
+        recommendVM.requestCycleData {
+//            print(self.recommendVM.cycleModels.count)
+        self.recommendCycleView.cycleModels = self.recommendVM.cycleModels
+        }
     }
     
 }
