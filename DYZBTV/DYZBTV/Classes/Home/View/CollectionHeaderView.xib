@@ -20,7 +20,6 @@
                     <rect key="frame" x="5" y="21" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="CEm-dj-glI"/>
-                        <constraint firstAttribute="width" constant="18" id="nzv-ro-5rM"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nw9-3u-NZl">

@@ -25,7 +25,6 @@ class RecommendViewController: UIViewController {
 
     //MARK: - 懒加载
    fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
-   fileprivate lazy var gameVM : GameViewModel = GameViewModel()
     
     lazy var collectionView : UICollectionView = {
         
