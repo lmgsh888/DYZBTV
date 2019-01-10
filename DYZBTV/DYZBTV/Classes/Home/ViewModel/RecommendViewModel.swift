@@ -105,7 +105,7 @@ extension RecommendViewModel{
             finistedCallBack()
         }
     }
-    
+
     //轮播数据
     func requestCycleData(_ finistedCallBack : @escaping ()->()){
         NetWorkTool.requestData(urlString: "http://www.douyutv.com/api/v1/slide/6", .get, parameters: ["version" : "2.300"]) { (result) in

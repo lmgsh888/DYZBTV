@@ -19,10 +19,14 @@ private let kPrettyItemH = kItemW * 4 / 3
 
 private let kcycleViewH : CGFloat =  KScreenW * 3 / 8
 
+private let kGameViewH : CGFloat = 90
+
 class RecommendViewController: UIViewController {
 
     //MARK: - 懒加载
-    lazy var recommendVM : RecommendViewModel = RecommendViewModel()
+   fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
+   fileprivate lazy var gameVM : GameViewModel = GameViewModel()
+    
     lazy var collectionView : UICollectionView = {
         
         //1.创建流水布局
@@ -59,47 +63,55 @@ class RecommendViewController: UIViewController {
     //顶部无限轮播
     fileprivate lazy var recommendCycleView : RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
-        cycleView.frame = CGRect(x: 0, y: -kcycleViewH, width: KScreenW, height: kcycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(kcycleViewH + kGameViewH), width: KScreenW, height: kcycleViewH)
         return cycleView
+    }()
+    
+    //顶部游戏分组
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: KScreenW, height: kGameViewH)
+        return gameView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //1.添加无限轮播
-        collectionView.addSubview(recommendCycleView)
-        //2.添加collectionView
-        view.addSubview(collectionView)
         
-        //3.设置collectionView的内边距
-        collectionView.contentInset = UIEdgeInsets(top: kcycleViewH, left: 0, bottom: 0, right: 0)
+        //1.设置ui界面
+        setUpUI()
         
-        //请求数据
-        recommendVM.requestData(){
-            //刷新界面
-            self.collectionView.reloadData()
-        }
-        
-        //请求轮播数据
-        recommendVM.requestCycleData {
-//            print(self.recommendVM.cycleModels.count)
-        self.recommendCycleView.cycleModels = self.recommendVM.cycleModels
-        }
+        //2.加载数据
+        loadData()
     }
     
 }
 
+//MARK: - 设置UI
+extension RecommendViewController {
+    fileprivate func setUpUI(){
+        //1.添加无限轮播
+        collectionView.addSubview(recommendCycleView)
+        
+        //2.添加游戏视图
+        collectionView.addSubview(gameView)
+        
+        //3.添加collectionView
+        view.addSubview(collectionView)
+        
+        //4.设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kcycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
+    }
+}
+
+
 extension RecommendViewController : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
    //返回组数
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        
-//        print("numberOfSections---",recommendVM.anchorGroups.count)
-        
         return recommendVM.anchorGroups.count
     }
     
     //返回每组的行数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        print("numberOfItemsInSection = ",recommendVM.anchorGroups[section].anchors.count)
         return recommendVM.anchorGroups[section].anchors.count
     }
     
@@ -141,11 +153,42 @@ extension RecommendViewController : UICollectionViewDataSource,UICollectionViewD
         }
         return CGSize(width: kItemW, height: kNormalItemH)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        print("选中了",indexPath.row)
+    }
 }
 
 //MARK: - 请求数据
 extension RecommendViewController{
-    
+    fileprivate func loadData(){
+        //请求数据
+        recommendVM.requestData(){
+            //刷新界面
+            self.collectionView.reloadData()
+            
+            //1.游戏组数据
+            var groups = self.recommendVM.anchorGroups
+            
+            //2.移除前两组数据
+            groups.removeFirst()
+            groups.removeFirst()
+            
+            //3.添加更多
+            var moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
+            //4.将数据传给游戏组视图
+            self.gameView.groups = groups
+            
+        }
+        //请求轮播数据
+        recommendVM.requestCycleData {
+            self.recommendCycleView.cycleModels = self.recommendVM.cycleModels
+        }
+    }
 }
 
 
