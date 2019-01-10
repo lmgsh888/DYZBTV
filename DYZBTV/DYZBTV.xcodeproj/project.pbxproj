@@ -48,6 +48,8 @@
 		04D3CCBC21C7D14900675DA2 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D3CCBA21C7D14900675DA2 /* CollectionNormalCell.xib */; };
 		04D3CCBF21C7D15E00675DA2 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3CCBD21C7D15E00675DA2 /* CollectionPrettyCell.swift */; };
 		04D3CCC021C7D15E00675DA2 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D3CCBE21C7D15E00675DA2 /* CollectionPrettyCell.xib */; };
+		04D67FD821E7891B00910A36 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D67FD721E7891B00910A36 /* OneViewController.swift */; };
+		04D67FDA21E7892A00910A36 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D67FD921E7892A00910A36 /* TwoViewController.swift */; };
 		04DAF43721D1170F001CCBA2 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF43621D1170F001CCBA2 /* NetWorkTool.swift */; };
 		04DAF43921D11BD6001CCBA2 /* NSDate-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF43821D11BD6001CCBA2 /* NSDate-extension.swift */; };
 		04DAF43B21D11DE4001CCBA2 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAF43A21D11DE4001CCBA2 /* AnchorModel.swift */; };
@@ -125,6 +127,8 @@
 		04D3CCBA21C7D14900675DA2 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		04D3CCBD21C7D15E00675DA2 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		04D3CCBE21C7D15E00675DA2 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		04D67FD721E7891B00910A36 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		04D67FD921E7892A00910A36 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		04DAF43621D1170F001CCBA2 /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
 		04DAF43821D11BD6001CCBA2 /* NSDate-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-extension.swift"; sourceTree = "<group>"; };
 		04DAF43A21D11DE4001CCBA2 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
@@ -297,6 +301,8 @@
 				0490AEBC20B047F0004C3354 /* AmuseViewController.swift */,
 				0490AEBA20B047E0004C3354 /* GameViewController.swift */,
 				042703A520A1DFD400A62387 /* LMHomeViewController.swift */,
+				04D67FD721E7891B00910A36 /* OneViewController.swift */,
+				04D67FD921E7892A00910A36 /* TwoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -747,6 +753,7 @@
 				040A144421E1ACA100ADABF8 /* CollectionCycleCell.swift in Sources */,
 				0411558E21E3954500A5FBD1 /* GameViewModel.swift in Sources */,
 				042703C120A1DFD400A62387 /* LMProfileViewController.swift in Sources */,
+				04D67FD821E7891B00910A36 /* OneViewController.swift in Sources */,
 				0490AEBF20B04802004C3354 /* FunnyViewController.swift in Sources */,
 				0490AEB720B02E02004C3354 /* PageContentView.swift in Sources */,
 				0490AEBB20B047E0004C3354 /* GameViewController.swift in Sources */,
@@ -768,6 +775,7 @@
 				0435032E20A8178A00630D03 /* UIBarButtonItem-Extension.swift in Sources */,
 				04DAF43B21D11DE4001CCBA2 /* AnchorModel.swift in Sources */,
 				04DAF43721D1170F001CCBA2 /* NetWorkTool.swift in Sources */,
+				04D67FDA21E7892A00910A36 /* TwoViewController.swift in Sources */,
 				04D3CCBB21C7D14900675DA2 /* CollectionNormalCell.swift in Sources */,
 				0490AEB920B047C9004C3354 /* RecommendViewController.swift in Sources */,
 			);

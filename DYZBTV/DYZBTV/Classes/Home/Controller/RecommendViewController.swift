@@ -155,7 +155,17 @@ extension RecommendViewController : UICollectionViewDataSource,UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        print("选中了",indexPath.row)
+        //MARK: - 这是测试数据
+        if indexPath.row % 2 == 0 {
+
+            let vc1 = OneViewController()
+            vc1.paramId = String(indexPath.row)
+            self.navigationController?.pushViewController(vc1, animated: true)
+
+        }else {
+            let vc2 = TwoViewController();
+            self.navigationController?.pushViewController(vc2, animated: true)
+        }
     }
 }
 
@@ -175,7 +185,7 @@ extension RecommendViewController{
             groups.removeFirst()
             
             //3.添加更多
-            var moreGroup = AnchorGroup()
+            let moreGroup = AnchorGroup()
             moreGroup.tag_name = "更多"
             groups.append(moreGroup)
             
